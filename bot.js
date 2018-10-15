@@ -45,7 +45,7 @@
 	  console.log('')
 	});
 
-	const prefix = "*"
+	const prefix = "."
 	client.on('message', async msg => { 
 		
 		if (msg.author.bot) return undefined;
@@ -265,7 +265,7 @@
 	});
 
 	client.on("message", message => {
-	 if (message.content === '!help') {
+	 if (message.content === '.help') {
 	  const embed = new Discord.RichEmbed()
 		  .setColor("#000000")
 		  .setDescription(`
